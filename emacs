@@ -7,6 +7,7 @@
    (quote
     (("gnu" . "http://elpa.gnu.org/packages/")
      ("marmalade" . "http://marmalade-repo.org/packages/")
+     ("melpa" . "http://melpa.org/packages/")
      ("melpa-stable" . "http://stable.melpa.org/packages/")))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -19,6 +20,8 @@
 ;; packages are loaded before you start trying to modify them.
 ;; This also sets the load path.
 (package-initialize)
+
+(add-to-list 'package-pinned-packages '(cider . "melpa-stable") t)
 
 ;; Download the ELPA archive description if needed.
 ;; This informs Emacs about the latest versions of all packages, and
