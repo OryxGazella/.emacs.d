@@ -30,7 +30,7 @@
 ;; manually with M-x package-install
 ;; Add in your own as you wish:
 (defvar my-packages
-  '(better-defaults))
+  '(better-defaults cider))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
@@ -46,3 +46,6 @@
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
+
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
