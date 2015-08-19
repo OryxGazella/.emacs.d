@@ -30,7 +30,11 @@
   (package-refresh-contents))
 
 (defvar my-packages
-  '(better-defaults cider exec-path-from-shell))
+  '(
+    better-defaults
+    cider
+    exec-path-from-shell
+    paredit))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
