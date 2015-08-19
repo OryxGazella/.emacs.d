@@ -3,4 +3,4 @@
 ## Steps ##
 
 * Install Emacs
-* Symlink emacs to ~/.emacs (run `./init.sh`)
+* clone this repo to $HOME/.emacs.d
