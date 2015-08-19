@@ -34,10 +34,14 @@
     better-defaults
     cider
     exec-path-from-shell
-    paredit))
+    paredit
+    solarized-theme
+    ))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
 
 (exec-path-from-shell-initialize)
+
+(load-theme 'solarized-dark t)
