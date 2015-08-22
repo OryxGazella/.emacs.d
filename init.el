@@ -23,6 +23,8 @@
 
 (add-to-list 'package-pinned-packages '(cider . "melpa-stable") t)
 
+(add-to-list 'package-pinned-packages '(magit . "melpa-stable") t)
+
 ;; Download the ELPA archive description if needed.
 ;; This informs Emacs about the latest versions of all packages, and
 ;; makes them available for download.
@@ -36,6 +38,7 @@
     exec-path-from-shell
     paredit
     solarized-theme
+    magit
     ))
 
 (dolist (p my-packages)
@@ -44,4 +47,4 @@
 
 (exec-path-from-shell-initialize)
 
-(load-theme 'solarized-dark t)
+(load-theme 'solarized-light t)
