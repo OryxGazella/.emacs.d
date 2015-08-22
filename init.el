@@ -48,3 +48,7 @@
 (exec-path-from-shell-initialize)
 
 (load-theme 'solarized-light t)
+
+(setq display-time-day-and-date t
+      display-time-24hr-format t)
+(display-time)
